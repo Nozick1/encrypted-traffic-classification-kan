@@ -1,0 +1,29 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 数据集与大型二进制（不纳入版本库）----
+dataset/
+数据集/
+k375训练*/
+*.pth
+*.pt
+*.rar
+*.zip
+*.7z
+
+# 但保留两个用于复现的种子0最优权重
+!kan_experiment/results/best_mlp.pth
+!kan_experiment/results/best_kan.pth
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+*.log
